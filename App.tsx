@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, View, StyleSheet, SafeAreaView } from "react-native";
+import { Text, Button, View, StyleSheet, SafeAreaView } from "react-native";
 
 import { Amplify } from "aws-amplify";
 import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react-native";
@@ -14,6 +14,7 @@ const SignOutButton = () => {
   return (
     <View style={styles.signOutButton}>
       <Button title="Sign Out" onPress={signOut} />
+      <Text> Page New </Text>
     </View>
   );
 };
